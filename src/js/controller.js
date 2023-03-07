@@ -11,10 +11,6 @@ import 'core-js/stable';  //This is for polyfiling everything
 import 'regenerator-runtime/runtime'; //This for polyfiling async/await
 import { async } from 'regenerator-runtime';
 
-// if(module.hot) {
-//   module.hot.accept();
-// }
-
 async function controlRecipes() {
 
   try {
@@ -137,6 +133,5 @@ const init = function() {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Hello World!');
 } 
 init();
